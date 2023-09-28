@@ -23,29 +23,30 @@ $(document).ready(function (){
       $("#numero").html(valor_dado)
   }) 
   $("#boton1").click(function (e){
-    $("#huevo").attr("src", "imagenes/gallofeliz.jpg")
+    $("#huevo").attr("src", "imagenes/gallofeliz.jfif")
     $("#boton2").hide();
+    a++
     if(a >= 2){
-      $("#huevo").attr("src", "imagenes/gallogallina.jpg")
+      $("#huevo").attr("src", "imagenes/gallogallina.jfif")
     }
     if(a >= 3){
       $("#huevo").attr("src", "imagenes/gallinero.jpg")
     }
     if(a >= 4){
-      $("#huevo").attr("src", "imagenes/viejo2.jpg")
+      $("#huevo").attr("src", "imagenes/viejo2.jfif")
     }
     if(a >= 5){
-      $("#huevo").attr("src", "imagenes/atadud.jpg")
+      $("#huevo").attr("src", "imagenes/atadud.jfif")
     }
   })
 
   
   $("#boton2").click(function (e){
-    $("#huevo").attr("src", "imagenes/murido.jpg")
+    $("#huevo").attr("src", "imagenes/murido.jfif")
     $("#boton1").hide();
     a++
      if(a >= 2){
-      $("#huevo").attr("src", "imagenes/olla.jpg")
+      $("#huevo").attr("src", "imagenes/olla.jfif")
     }
     if(a >= 3){
       $("#huevo").attr("src", "imagenes/kfc.jpg")
@@ -54,7 +55,7 @@ $(document).ready(function (){
       $("#huevo").attr("src", "imagenes/coca.jpg")
     }
     if(a >= 5){
-      $("#huevo").attr("src", "imagenes/huesoo.jpg")
+      $("#huevo").attr("src", "imagenes/huesoo.jfif")
     }
    })
  
