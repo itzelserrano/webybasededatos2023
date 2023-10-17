@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
 <body>
 
@@ -25,7 +26,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Opciones
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -53,11 +54,14 @@
                 <h1>
                     <h1>Sistema de gestion de control escolar</h1>
                     <h3>CETIs 107</h3>
-                    <img src="cetis107.jpg" alt="" width="40%" class="img-fluid">
-                </h1>
+                    <center><img src="cetis107.jpg" alt="" width="40%" class="img-fluid"></center>
             </div>
         </div>
     </div>
+    
+    <footer class="text-center">
+      <span>Cetis 107 web App &copy; 2023</span>
+    </footer>
     <script scr="js/bootstrap.js"></script>
 </body>
 </html>
