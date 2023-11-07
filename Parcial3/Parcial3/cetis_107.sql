@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2023 a las 03:24:43
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 28-09-2023 a las 04:19:48
+-- Versión del servidor: 10.4.25-MariaDB
+-- Versión de PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `cetis_107`
+-- Base de datos: `cetis 107`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +35,7 @@ CREATE TABLE `alumnos` (
   `edad` int(11) NOT NULL,
   `turno` varchar(10) NOT NULL,
   `sexo` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `alumnos`
@@ -48,28 +48,6 @@ INSERT INTO `alumnos` (`id`, `nombre`, `numero_control`, `semestre`, `edad`, `tu
 (4, 'Gonzalez Estrada Giselle Abigail', '21325061076253', 5, 17, 'VESPERTINO', 0),
 (5, 'Rodriguez meza Erik David', '21325061072846', 5, 1, 'VESPERTINO', 0);
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `materias`
---
-
-CREATE TABLE `materias` (
-  `id` bigint(20) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `semestre` int(11) NOT NULL,
-  `especialidad` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Volcado de datos para la tabla `materias`
---
-
-INSERT INTO `materias` (`id`, `nombre`, `semestre`, `especialidad`) VALUES
-(1, 'Calculo integral', 5, 'Programacion'),
-(2, 'Fisica II', 3, 'Contabilidad'),
-(3, 'Ingles II', 1, 'Electronica');
-
 --
 -- Índices para tablas volcadas
 --
@@ -81,12 +59,6 @@ ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `materias`
---
-ALTER TABLE `materias`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -95,12 +67,6 @@ ALTER TABLE `materias`
 --
 ALTER TABLE `alumnos`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT de la tabla `materias`
---
-ALTER TABLE `materias`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
