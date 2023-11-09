@@ -2,8 +2,8 @@
 
     $server     = "localhost:3306"; //para XAMPP es solo "localhost"
     $user       = "root";
-    $password   = "root";
-    $baseDatos  = "cetis107";
+    $password   = "";
+    $baseDatos  = "cetis_107";
 
     $conexion = new mysqli($server, $user, $password, $baseDatos);
 
