@@ -26,11 +26,11 @@
                         <label for="semestre">Especialidad:</label>
                             <select name="especialidad" class="form-control">
                                 <option value="">Seleccionar una especialidad</option>
-                                <option value="PROGRAMACION">PROGRAMACION</option>
-                                <option value="CONTABILIDAD">CONTABILIDAD</option>
-                                <option value="OFIMATICA">OFIMATICA</option>
-                                <option value="CONSTRUCCION">CONSTRUCCION</option>
-                                <option value="ELECTRONICA">ELECTRONICA</option>
+                                <option value="PROGRAMACION">Programción</option>
+                                <option value="CONTABILIDAD">Contabilidad</option>
+                                <option value="OFIMATICA">Ofimatica</option>
+                                <option value="CONSTRUCCION">Construcción</option>
+                                <option value="ELECTRONICA">Electronica</option>
                             </select><br>
                     </div>
                     <div>
