@@ -15,31 +15,31 @@
 
         $id = $_GET["id"];
 
-        $sql = "SELECT * FROM materia WHERE id=".$id;
+        $sql = "SELECT * FROM materias WHERE id=".$id;
 
         $datos = $conexion->query($sql);
         
-        $materia = $datos->fetch_assoc();
+        $materias = $datos->fetch_assoc();
 
     ?>
     <div class="container">
         <div class="row">
             <div class="col-12 card m-4 p-4">
-                <h2>Registrar Materias</h2><hr>
-                <form action="ActualizarMateria.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $materia["id"]; ?>">
+                <h2>Registrar materias</h2><hr>
+                <form action="Actualizarmateria.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $materias["id"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre:</label>
-                        <input value="<?php echo $materia["nombre"]; ?>" name="nombre" type="text" class="form-control" placeholder="Teclea el nombre del materias" required>
+                        <input value="<?php echo $materias["nombre"]; ?>" name="nombre" type="text" class="form-control" placeholder="Teclea el nombre del materias" required>
                     </div>
                     <div class="form-group">
                         <label for="">Semestre:</label>
-                        <input value="<?php echo $materia["semestre"]; ?>" name="semestre" type="number" class="form-control" placeholder="Teclea el semestre" required>
+                        <input value="<?php echo $materias["semestre"]; ?>" name="semestre" type="number" class="form-control" placeholder="Teclea el semestre" required>
                     </div>
                     <div class="form-group">
                         <label for="">Especialidad:</label>
                         <select name="especialidad" class="form-control" required>
-                            <option selected value="<?php echo $materia["especialidad"]; ?>"><?php echo $materia["especialidad"]; ?></option>
+                            <option selected value="<?php echo $materias["especialidad"]; ?>"><?php echo $materias["especialidad"]; ?></option>
                             <option value="">Selecciona el especialidad</option>
                             <option value="PROGRAMACIÓN">PROGRAMACIÓN</option>
                             <option value="CONTABILIDAD">CONTABILIDAD</option>
@@ -50,7 +50,7 @@
                     </div><br>
                     <div>
                         <input type="submit" value="Actualizar" class="btn btn-primary">
-                        <a href="ConsultarMateria.php" class="btn btn-danger">Cancelar</a>
+                        <a href="Consultarmaterias.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </form>
             </div>
