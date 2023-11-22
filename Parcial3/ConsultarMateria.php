@@ -61,6 +61,6 @@
         CETIS 107 &copy; 2023
     </footer>
 
-    <script src="js/bootstrap.js"></script>
+    s
 </body>
 </html>
